@@ -21,13 +21,13 @@ This is **not** a generic chatbot — it answers questions based on *your actual
 
 ## Architecture Overview
 
-**Slack → Keyword Extraction → Google Sheets Search → LLM Response**
+**Slack → Keyword Extraction → Google Sheets Search → yAI Response**
 
 1. Slack event received (`@mention` or DM)
 2. Query cleaned and analyzed for business intent
 3. Keywords and business themes extracted
 4. Google Sheets searched and scored
-5. Context-aware prompt sent to LLM API
+5. Context-aware prompt sent to yAI API
 6. Response returned to Slack
 
 ---
@@ -37,7 +37,7 @@ This is **not** a generic chatbot — it answers questions based on *your actual
 - **Node.js**
 - **Slack Bolt SDK** (Socket Mode)
 - **Google Sheets API**
-- **Custom LLM API** (Elysia)
+- **Custom yAI API**
 - **dotenv** for environment configuration
 - **node-fetch** for API requests
 
