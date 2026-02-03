@@ -1,0 +1,11 @@
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+build = ["npm", "install"]
+run = ["node", "index.js"]
+
+[env]
+NODE_ENV = "production"
